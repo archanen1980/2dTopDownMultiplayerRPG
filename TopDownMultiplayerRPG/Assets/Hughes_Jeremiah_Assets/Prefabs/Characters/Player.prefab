@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 8115676706030202314}
   - component: {fileID: 6698035080797899797}
   - component: {fileID: 1916591453515490885}
+  - component: {fileID: 6482749995637836042}
+  - component: {fileID: 7779842844216111711}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -3904803111339541866, guid: c046239fd79750749b2f210032017509, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -160,3 +162,45 @@ MonoBehaviour:
   rotationSpeed: 500
   animator: {fileID: 8115676706030202314}
   useAnimator: 0
+  baseStats: {fileID: 0}
+  attackRange: 1
+--- !u!114 &6482749995637836042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118730378958589632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0d794a17c6bfc54b8213420049ee48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  currentHp: 0
+  maxMana: 50
+  currentMana: 0
+  attack: 10
+  attackDelay: 1
+  currentAttackDelay: 0
+--- !u!65 &7779842844216111711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8118730378958589632}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.76, y: 0.78, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
