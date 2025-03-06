@@ -164,7 +164,7 @@ public class TopDownCharacterController : MonoBehaviour
             baseStats.TakeDamage(damage);
         }
     }
-    public void Attack(BaseEnemy enemy)
+    public void Attack(BaseEnemyController enemy)
     {
         if (baseStats != null)
         {
@@ -182,7 +182,7 @@ public class TopDownCharacterController : MonoBehaviour
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(transform.position, baseStats.attackRange);
             foreach (Collider2D enemy in hitEnemies)
             {
-                BaseEnemy enemyComponent = enemy.GetComponent<BaseEnemy>();
+                BaseEnemyController enemyComponent = enemy.GetComponent<BaseEnemyController>();
                 if (enemyComponent != null)
                 {
                     Debug.Log("Attacking The Enemy");

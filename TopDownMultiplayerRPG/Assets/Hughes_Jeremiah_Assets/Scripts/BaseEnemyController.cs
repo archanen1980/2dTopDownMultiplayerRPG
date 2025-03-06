@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BaseEnemy : MonoBehaviour
+public class BaseEnemyController : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 2f; // Default enemy movement speed
@@ -90,7 +90,7 @@ public class BaseEnemy : MonoBehaviour
             TopDownCharacterController player = target.GetComponent<TopDownCharacterController>();
             if (player != null)
             {
-                Debug.Log("Attacking Player");  
+                 Debug.Log("Attacking Player");
                 player.TakeDamage(attackDamage);
             }
             else
